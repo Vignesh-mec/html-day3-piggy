@@ -1,0 +1,129 @@
+#face{
+    border: 5px solid black;
+    height: 300px; width: 300px;
+    background-color:#00b300;
+    border-radius: 360px;
+
+}
+    
+#eye-container{
+    position: absolute;
+    /*border: 1px solid black;*/
+    height: 100px; width: 297px;
+    top: 150px;;
+    
+}
+#left-i,#right-i {
+position: absolute;
+border: 2px solid green;
+height: 80px; width: 80px;
+border-radius: 100px;
+left: 29px;
+background-color: aliceblue;
+transition: transform 1.5s ease-in-out;
+}
+
+#right-i{
+    left: 180px;
+    transition: transform 1.5s ease-in-out;
+}
+#left-i::before,#right-i::before{
+    content: " ";
+    position: absolute;
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-color: black;
+    top: 25px;
+    left: 25px;
+}
+#mouth{
+    border: 3px solid green;
+    height: 100px; width: 150px;
+    border-radius: 60px;
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    background-color:#00ff00;
+    
+}
+#lh,#rh{
+    border: 1px solid black;
+    height: 35px; width: 15px;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
+    left: 110px;
+    top: 230px;
+    
+}
+#rh{
+    left: 185px;
+    
+}
+#mo{
+    height: 50px;
+    width: 100px;
+    background-color: #ff1a1a;
+    border-radius: 0% 0% 100% 100%;
+    border: 2px solid green;
+    position: absolute;
+    top: 301px;
+    left: 110px;
+    transition: transform 2s ease-in;
+
+    /* z-index: -1; */
+}
+#teeth,#teeth1,#teeth2,#teeth3,#teeth4{
+    border: 1px solid black;
+    height: 20px; width: 20px;
+    border-radius: 0% 0% 50% 50%;
+    background-color: aliceblue;
+    position: absolute;
+}
+#teeth1{
+    left: 23px;
+}
+#teeth{
+    left: 47px;
+}
+#teeth3{
+    left: 70px;
+}
+
+#lear{
+    position: absolute;
+    border: 5px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    left: 200px;
+    bottom: 400px;
+    background-color:#00b300;;
+    z-index: -1;
+    
+}
+#rear{
+    position: absolute;
+    border: 5px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    right: 180px;
+    bottom: 390px;
+    background-color:#00b300;
+    left: 10px;
+    z-index: -1;
+    }
+#right-i:hover{
+    transform: scale(0);
+}
+#left-i:hover{
+    transform: scale(0);
+
+}
+#mo:hover{
+    transform: scale(0);
+}
+
